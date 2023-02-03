@@ -1,0 +1,29 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/gestion_stock
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+  flickr:
+    apiKey: 90f9fa29d714b979203827a2a145afab
+    apiSecret: d68d36e2f4637b80
+    appKey: 72157720872333285-d93a29ef6b2b9b14
+    appSecret: f1f909096aeb897d
+
+#  spring:
+#    mvc:
+#      pathmatch:
+#        matching-strategy: ant_path_matcher
+
+
